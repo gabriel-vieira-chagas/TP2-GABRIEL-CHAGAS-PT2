@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Products from './Products'; // Reutiliza o componente Products do exercício anterior
+import Products from './Products'; 
 
-// Componente principal do exercício 10
 const Exercise10 = () => {
   const [products, setProducts] = useState([]); 
   const [loading, setLoading] = useState(true); 

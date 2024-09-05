@@ -9,10 +9,9 @@ const KeywordDisplay = ({ keyword }) => {
 };
 
 const Exercise08 = () => {
-    const [keyword, setKeyword] = useState(''); // Estado para armazenar a palavra-chave
-
+    const [keyword, setKeyword] = useState(''); 
     const handleInputChange = (event) => {
-      setKeyword(event.target.value); // Atualiza o estado com o valor digitado pelo usuário
+      setKeyword(event.target.value); 
     };
   
     return (
@@ -22,10 +21,10 @@ const Exercise08 = () => {
         <input
           type="text"
           value={keyword}
-          onChange={handleInputChange} // Chama a função ao mudar o valor do input
+          onChange={handleInputChange}
           placeholder="Digite aqui..."
         />
-        <KeywordDisplay keyword={keyword} /> {/* Passa a palavra-chave como props */}
+        <KeywordDisplay keyword={keyword} /> 
       </div>
   );
 };
